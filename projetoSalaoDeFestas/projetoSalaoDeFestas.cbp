@@ -31,10 +31,26 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="b_clientes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="b_clientes.h" />
+		<Unit filename="b_festas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="b_festas.h" />
+		<Unit filename="b_fornecedores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="b_fornecedores.h" />
 		<Unit filename="b_funcionarios.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="b_funcionarios.h" />
+		<Unit filename="b_menus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="b_menus.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

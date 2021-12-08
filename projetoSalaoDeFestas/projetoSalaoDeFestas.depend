@@ -1,0 +1,71 @@
+# depslib dependency file v1.0
+1638988768 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_funcionarios.c
+	"b_funcionarios.h"
+	"b_menus.h"
+
+1638999765 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_menus.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<time.h>
+	<locale.h>
+
+1638988817 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_funcionarios.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<time.h>
+	<locale.h>
+
+1639000288 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_menus.c
+	"b_menus.h"
+	"b_clientes.h"
+	"b_funcionarios.h"
+	"b_fornecedores.h"
+
+1638997698 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\main.c
+	"b_funcionarios.h"
+	"b_fornecedores.h"
+	"b_menus.h"
+
+1638999264 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.c
+	"b_menus.h"
+	"b_clientes.h"
+	"b_festas.h"
+
+1638989442 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_fornecedores.c
+	"b_menus.h"
+	"b_fornecedores.h"
+	"b_funcionarios.h"
+
+1638988658 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_fornecedores.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<time.h>
+	<locale.h>
+
+1639000000 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<time.h>
+	<locale.h>
+
+1639000119 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.c
+	"b_menus.h"
+	"b_clientes.h"
+
+1638999743 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<time.h>
+	<locale.h>
+	<stdbool.h>
+

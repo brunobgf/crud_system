@@ -1,11 +1,5 @@
-#include "b_funcionario.h"
-
-void inclui_funcionario(FILE *f);
-int localiza_funcionario(FILE *f,int cod);
-void imprime_funcionario(FILE *f);
-void exclui_funcionario(FILE *f);
-void altera_funcionario(FILE *f);
-
+#include "b_funcionarios.h"
+#include "b_menus.h"
 
 struct Tfuncionario
 {
@@ -15,69 +9,11 @@ struct Tfuncionario
 };
 typedef struct Tfuncionario funcionario;
 
-void opFuncionario()
-{
-    int  op;
-    srand(time(NULL));
-    FILE *f;
-    setlocale(LC_ALL,"portuguese");
-
-    if ((f = fopen("controleSalaoDeFestas.dat", "r+b"))==NULL) // arquivo existe
-    {
-        printf("Arquivo não existia ... criando arquivo!");
-        if((f = fopen("controleSalaoDeFestas.dat", "w+b"))==NULL) //arq não existe
-        {
-            printf("Erro na criação do arquivo!!");
-            exit(1);
-        }
-    }
-
-
-    do
-    {
-
-        printf("Escolha:\n");
-        printf ("a - incluir funcionario \n");
-        printf("b - alterar funcionario\n");
-        printf ("c - imprimir funcionario\n");
-        printf ("d - excluir funcionario\n");
-        printf ("e - sair do programa\n");
-        op=getch ();
-        switch (op)
-        {
-        case 'a':
-            printf("preenchendo o arquivo...\n");
-            inclui_funcionario(f);
-            break;
-
-        case 'b':
-            printf("alterando o arquivo...\n");
-            altera_funcionario(f);
-            break;
-
-        case 'c':
-            printf("imprmindo o arquivo...\n");
-            imprime_funcionario(f);
-            system("pause");
-            break;
-
-        case 'd':
-            printf("deletando linha...\n");
-            exclui_funcionario(f);
-            system("pause");
-            break;
-
-
-        }
-    }
-    while(op!='e');
-    fclose(f);
-
-}
 
 void inclui_funcionario(FILE *f)
 {
-    funcionario  fun;
+
+    funcionario fun;
     int posicao;
     //lendo os dados do teclado
     printf("Digite o numero do codigo...:");
@@ -226,6 +162,5 @@ int localiza_funcionario(FILE *f,int cod)
         return -1;
     }
 }
-
 
 
