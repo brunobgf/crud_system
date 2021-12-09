@@ -19,18 +19,19 @@
 	<time.h>
 	<locale.h>
 
-1639000288 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_menus.c
+1639005335 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_menus.c
 	"b_menus.h"
 	"b_clientes.h"
 	"b_funcionarios.h"
 	"b_fornecedores.h"
+	"b_festas.h"
 
 1638997698 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\main.c
 	"b_funcionarios.h"
 	"b_fornecedores.h"
 	"b_menus.h"
 
-1638999264 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.c
+1639007145 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.c
 	"b_menus.h"
 	"b_clientes.h"
 	"b_festas.h"
@@ -48,19 +49,20 @@
 	<time.h>
 	<locale.h>
 
-1639000000 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.h
+1639002580 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<conio.h>
+	<stdbool.h>
 	<time.h>
 	<locale.h>
 
-1639000119 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.c
+1639002679 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.c
 	"b_menus.h"
 	"b_clientes.h"
 
-1638999743 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.h
+1639005347 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

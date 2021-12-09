@@ -3,9 +3,8 @@
 
 struct TCliente
 {
-    int excluido, telefone;
+    int excluido, telefone,codigo;
     char nome[50], endereco[50], dtnascimento[9];
-    float codigo;
 };
 typedef struct TCliente cliente;
 
@@ -16,7 +15,7 @@ void inclui_cliente(FILE *f)
 //lendo os dados do teclado
     printf("Digite o código do cliente...: ");
     fflush(stdin);
-    scanf("%f",&cli.codigo);
+    scanf("%d",&cli.codigo);
     posicao = localiza_cliente(f, cli.codigo);
 
     if(posicao == -1) //não tinha código no arquivo
@@ -28,6 +27,7 @@ void inclui_cliente(FILE *f)
         fflush(stdin);
         gets(cli.endereco);
         printf("Digite o telefone do cliente...: ");
+        fflush(stdin);
         scanf("%d",&cli.telefone);
         printf("Digite a data de nascimento...: ");
         fflush(stdin);
@@ -40,11 +40,11 @@ void inclui_cliente(FILE *f)
     }
     else
     {
-        printf("\nCódigo %0.f já existe no arquivo. Inclusão não realizada!\n\n", cli.codigo);
+        printf("\nCódigo %d já existe no arquivo. Inclusão não realizada!\n\n", cli.codigo);
     }
 }
 
-int localiza_cliente(FILE *f, float codigo)
+int localiza_cliente(FILE *f, int codigo)
 {
     int posicao = -1, achou = 0;
 
@@ -72,25 +72,24 @@ int localiza_cliente(FILE *f, float codigo)
 
 }
 
-/*
+
 void imprime_cliente(FILE *f)
 {
-    Cliente cli;
+    cliente cli;
     fseek(f,0,SEEK_SET);
     fread(&cli, sizeof(cli),1, f);
     while (!feof(f))
     {
         if(cli.codigo!=0)
         {
-            printf("Código....................:%.2f\n",cli.codigo);
+            printf("Código....................:%d\n",cli.codigo);
             printf("Nome......................:%s \n",cli.nome);
             printf("Telefone..................:%d\n",cli.telefone);
             printf("Endreço...................:%s\n",cli.endereco);
             printf("Data de Nascimento........:%s\n",cli.dtnascimento);
-
         }
 
-        fread(&fun, sizeof(fun),1, f);
+        fread(&cli, sizeof(cli),1, f);
     }
 }
-*/
+

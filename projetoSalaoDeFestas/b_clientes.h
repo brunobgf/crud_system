@@ -5,10 +5,12 @@
 #include <stdlib.h>
 #include<string.h>
 #include <conio.h>
+#include <stdbool.h>
 #include <time.h>
 #include <locale.h>
+
 void inclui_cliente(FILE *f);
-int localiza_cliente(FILE *f, float codigo);
+int localiza_cliente(FILE *f, int codigo);
 void imprime_cliente(FILE *f);
 
 #endif // B_CLIENTES_H_INCLUDED

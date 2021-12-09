@@ -2,17 +2,18 @@
 #include "b_clientes.h"
 #include "b_funcionarios.h"
 #include "b_fornecedores.h"
+#include "b_festas.h"
 
 void menuClientes()
 {
     int op;
-    FILE *f;
+    FILE *fcli;
     setlocale(LC_ALL,"portuguese");
 
-    if ((f = fopen("controleClientes.dat", "r+b"))==NULL) // arquivo existe
+    if ((fcli = fopen("controleClientes.dat", "r+b"))==NULL) // arquivo existe
     {
         printf("Arquivo não existia ... criando arquivo!\n");
-        if((f = fopen("controleClientes.dat", "w+b"))==NULL) //arq não existe
+        if((fcli = fopen("controleClientes.dat", "w+b"))==NULL) //arq não existe
         {
             printf("Erro na criação do arquivo!!");
             exit(1);
@@ -34,17 +35,17 @@ void menuClientes()
         case 'a':
             printf("Cadastrando um novo cliente...\n");
             printf("preenchendo o arquivo...\n");
-            inclui_cliente(f);
+            inclui_cliente(fcli);
             break;
-        /*case 'c':
+       case 'c':
             printf("Mostrando todos os clientes...\n");
             printf("preenchendo o arquivo...\n");
-            imprime_cliente(f);
-            break;*/
+            imprime_cliente(fcli);
+            break;
         }
     }
     while(op!='e');
-    fclose(f);
+    fclose(fcli);
     printf("\nVoltando para o menu principal...\n\n");
 }
 
@@ -93,8 +94,6 @@ void menuFuncionarios()
     fclose(f);
     printf("\nVoltando para o menu principal...\n\n");
 }
-
-
 
 
 void menuFornecedores()
@@ -174,13 +173,13 @@ void menuFestas()
         case 'a':
             printf("Cadastrando um novo cliente...\n");
             printf("preenchendo o arquivo...\n");
-            inclui_cliente(f);
+            inclui_festa(f);
             break;
-        /*case 'c':
+        case 'c':
             printf("Mostrando todos os clientes...\n");
             printf("preenchendo o arquivo...\n");
             imprime_cliente(f);
-            break;*/
+            break;
         }
     }
     while(op!='e');
