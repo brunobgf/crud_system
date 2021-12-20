@@ -9,8 +9,10 @@
 #include <time.h>
 #include <locale.h>
 
-void inclui_cliente(FILE *f);
-int localiza_cliente(FILE *f, int codigo);
-void imprime_cliente(FILE *f);
+void CriaArquivoCliente(FILE *fcli);
+void IncluiCliente();
+int localiza_codigo(FILE *f, float codigo);
+void localiza_cliente();
+
 
 #endif // B_CLIENTES_H_INCLUDED

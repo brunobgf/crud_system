@@ -9,9 +9,18 @@
 #include <locale.h>
 #include <stdbool.h>
 
-void inclui_festa(FILE *f);
-int localiza_codigo_festa(FILE *f, int codigo);
-bool busca_cliente(int codigo);
-void imprime_cliente(FILE *f);
+void IncluiFesta();
+int localiza_codigo_festa(FILE *f, float codigo);
+int VerificaDataDisponivel(FILE *f, char data[50]);
+int VerificaHorario(FILE *f, int horaini, int horafim);
+bool BuscaCliente(float codigo);
+float CalculaTotalFesta(int, int );
+void localiza_festas_cliente();
+int verifica_codigo_festa(FILE *f);
+void altera_status_contrato();
+void localiza_festas_data();
+
+float CalculaTotalFesta(int, int);
+float CalculaDesconto(int formapag, float valorbruto);
 
 #endif // B_FESTAS_H_INCLUDED

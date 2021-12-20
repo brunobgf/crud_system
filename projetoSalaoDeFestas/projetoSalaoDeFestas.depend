@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1638988768 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_funcionarios.c
+1639014926 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_funcionarios.c
 	"b_funcionarios.h"
 	"b_menus.h"
 
@@ -19,24 +19,24 @@
 	<time.h>
 	<locale.h>
 
-1639005335 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_menus.c
+1639243736 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_menus.c
 	"b_menus.h"
 	"b_clientes.h"
 	"b_funcionarios.h"
 	"b_fornecedores.h"
 	"b_festas.h"
 
-1638997698 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\main.c
+1639241724 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\main.c
 	"b_funcionarios.h"
 	"b_fornecedores.h"
 	"b_menus.h"
 
-1639007145 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.c
+1639244106 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.c
 	"b_menus.h"
 	"b_clientes.h"
 	"b_festas.h"
 
-1638989442 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_fornecedores.c
+1639056221 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_fornecedores.c
 	"b_menus.h"
 	"b_fornecedores.h"
 	"b_funcionarios.h"
@@ -49,7 +49,7 @@
 	<time.h>
 	<locale.h>
 
-1639002580 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.h
+1639102171 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -58,11 +58,11 @@
 	<time.h>
 	<locale.h>
 
-1639002679 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.c
+1639230101 source:c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_clientes.c
 	"b_menus.h"
 	"b_clientes.h"
 
-1639005347 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.h
+1639228037 c:\users\bruno\onedrive\documentos\folder\crud_system\projetosalaodefestas\b_festas.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

@@ -7,45 +7,35 @@
 void menuClientes()
 {
     int op;
-    FILE *fcli;
     setlocale(LC_ALL,"portuguese");
 
-    if ((fcli = fopen("controleClientes.dat", "r+b"))==NULL) // arquivo existe
-    {
-        printf("Arquivo não existia ... criando arquivo!\n");
-        if((fcli = fopen("controleClientes.dat", "w+b"))==NULL) //arq não existe
-        {
-            printf("Erro na criação do arquivo!!");
-            exit(1);
-        }
-    }
     do
     {
 
         printf("Escolha:\n");
         printf ("a - Cadastro de Clientes \n");
         printf ("b - Imprimir cliente por código\n");
-        printf ("c - Imprimir todos os clientes\n");
-        printf ("d - Alterar cliente\n");
-        printf ("e - Excluir cliente\n");
-        printf ("f - Voltar para o menu principal\n");
+        printf ("e - Voltar para o menu principal\n");
         op=getch ();
         switch (op)
         {
         case 'a':
             printf("Cadastrando um novo cliente...\n");
             printf("preenchendo o arquivo...\n");
-            inclui_cliente(fcli);
+            IncluiCliente();
             break;
-       case 'c':
-            printf("Mostrando todos os clientes...\n");
+
+
+        case 'b':
+            printf("Buscando pelo cliente...\n");
             printf("preenchendo o arquivo...\n");
-            imprime_cliente(fcli);
+            localiza_cliente();
             break;
+
         }
     }
     while(op!='e');
-    fclose(fcli);
+
     printf("\nVoltando para o menu principal...\n\n");
 }
 
@@ -71,10 +61,7 @@ void menuFuncionarios()
         printf("Escolha:\n");
         printf ("a - Cadastro de Funcionarios \n");
         printf ("b - Imprimir funcionario por código\n");
-        printf ("c - Imprimir todos os funcionarios\n");
-        printf ("d - Alterar funcionario\n");
-        printf ("e - Excluir funcionario\n");
-        printf ("f - Voltar para o menu principal\n");
+        printf ("e - Voltar para o menu principal\n");
         op=getch ();
         switch (op)
         {
@@ -83,8 +70,8 @@ void menuFuncionarios()
             printf("preenchendo o arquivo...\n");
             inclui_funcionario(f);
             break;
-        case 'c':
-            printf("Cadastrando um novo funcionário...\n");
+        case 'b':
+            printf("Procurando pelo funcionário...\n");
             printf("preenchendo o arquivo...\n");
             imprime_funcionario(f);
             break;
@@ -116,21 +103,18 @@ void menuFornecedores()
 
         printf("Escolha:\n");
         printf ("a - Cadastro de Fornecedores \n");
-        printf ("b - Imprimir fornecedor por código\n");
-        printf ("c - Imprimir todos os Fornecedores\n");
-        printf ("d - Alterar fornecedor\n");
-        printf ("e - Excluir fornecedor\n");
-        printf ("f - Voltar para o menu principal\n");
+        printf ("b - Pesquise fornecedor por código\n");
+        printf ("e - Voltar para o menu principal\n");
         op=getch ();
         switch (op)
         {
         case 'a':
-            printf("Cadastrando um novo funcionário...\n");
+            printf("Cadastrando um novo fornecedor...\n");
             printf("preenchendo o arquivo...\n");
             inclui_fornecedor(f);
             break;
-        case 'c':
-            printf("Cadastrando um novo funcionário...\n");
+        case 'b':
+            printf("Pesquisando por fornecedor...\n");
             printf("preenchendo o arquivo...\n");
             imprime_fornecedor(f);
             break;
@@ -145,44 +129,45 @@ void menuFornecedores()
 void menuFestas()
 {
     int op;
-    FILE *f;
+
     setlocale(LC_ALL,"portuguese");
 
-    if ((f = fopen("controleFestas.dat", "r+b"))==NULL) // arquivo existe
-    {
-        printf("Arquivo não existia ... criando arquivo!\n");
-        if((f = fopen("controleFestas.dat", "w+b"))==NULL) //arq não existe
-        {
-            printf("Erro na criação do arquivo!!");
-            exit(1);
-        }
-    }
     do
     {
 
         printf("Escolha:\n");
-        printf ("a - Cadastro de Clientes \n");
-        printf ("b - Imprimir cliente por código\n");
-        printf ("c - Imprimir todos os clientes\n");
-        printf ("d - Alterar cliente\n");
-        printf ("e - Excluir cliente\n");
-        printf ("f - Voltar para o menu principal\n");
+        printf ("a - Cadastro de Festas \n");
+        printf ("b - Relatório de festas por código do cliente\n");
+        printf ("c - Alterar status contrato \n");
+        printf ("d - Relatório de festas por data\n");
+        printf ("e - Voltar para o menu principal\n");
         op=getch ();
         switch (op)
         {
         case 'a':
-            printf("Cadastrando um novo cliente...\n");
+            printf("Cadastrando uma nova festa...\n");
             printf("preenchendo o arquivo...\n");
-            inclui_festa(f);
+            IncluiFesta();
+            break;
+        case 'b':
+            printf("Buscando festas...\n");
+            printf("preenchendo o arquivo...\n");
+            localiza_festas_cliente();
             break;
         case 'c':
-            printf("Mostrando todos os clientes...\n");
+            printf("Buscando contrato...\n");
             printf("preenchendo o arquivo...\n");
-            imprime_cliente(f);
+            altera_status_contrato();
+            break;
+        case 'd':
+            printf("Buscando festas na data especifica...\n");
+            printf("preenchendo o arquivo...\n");
+            localiza_festas_data();
             break;
         }
     }
     while(op!='e');
-    fclose(f);
     printf("\nVoltando para o menu principal...\n\n");
 }
+
+

@@ -2,6 +2,28 @@
 #include "b_fornecedores.h"
 #include "b_menus.h"
 
+/*
+
+TRABALHO AED I - SALAO DE FESTAS
+
+Alunos:
+- Bruno Gomes Ferreira
+- Samara Martins Ferreira
+
+*/
+
+
+/*
+
+DADOS DE CLIENTES/FUNCIONARIOS/FORNECEDORES CADASTRADOS PARA REALIZAR O TESTE
+
+- Clientes: Código 1313 e 1414
+- Funcionários: Código 2212
+- Fornecedores: Código 123
+- Festas: Código de festa 112021 e 155 ; Festas cadastradas no momento: 10/12/21
+
+*/
+
 
 int main()
 {
@@ -41,49 +63,3 @@ int main()
     return 0;
 }
 
-
-
-
-/*
-
-    do
-    {
-
-        printf("Escolha:\n");
-        printf ("a - incluir funcionario \n");
-        printf("b - alterar funcionario\n");
-        printf ("c - imprimir funcionario\n");
-        printf ("d - excluir funcionario\n");
-        printf ("e - sair do programa\n");
-        op=getch ();
-        switch (op)
-        {
-        case 'a':
-            printf("preenchendo o arquivo...\n");
-            inclui_funcionario(f);
-            break;
-
-        case 'b':
-            printf("alterando o arquivo...\n");
-            altera_funcionario(f);
-            break;
-
-        case 'c':
-            printf("imprmindo o arquivo...\n");
-            imprime_funcionario(f);
-            system("pause");
-            break;
-
-        case 'd':
-            printf("deletando linha...\n");
-            exclui_funcionario(f);
-            system("pause");
-            break;
-        }
-    }
-    while(op!='e');
-    fclose(f);
-
-    return 0;
-}
-*/
